@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for HTG project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests available yet!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelfromyeg/htg.git"
+  },
+  "keywords": [
+    "htg"
+  ],
+  "author": "Michael DeMarco <michaelfromyeg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelfromyeg/htg/issues"
+  },
+  "homepage": "https://github.com/michaelfromyeg/htg#readme"
+}
