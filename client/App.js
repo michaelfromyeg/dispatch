@@ -1,13 +1,23 @@
+import 'react-native-gesture-handler';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import Main from '../client/pages/Main';
+import Settings from '../client/pages/Settings';
+import SetupWelcome from '../client/pages/SetupWelcome';
+import SetupPin from '../client/pages/SetupPin';
+import SetupEmergency from '../client/pages/SetupEmergency';
+
+const Stack = createStackNavigator();
 
 export default function App() {
+
   const [fontsLoaded] = Font.useFonts({
-    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
-    'Inter-SemiBoldItalic':
-      'https://rsms.me/inter/font-files/Inter-SemiBoldItalic.otf?v=3.12',
+    'PublicSans': require('./assets/fonts/PublicSans-Italic-VariableFont_wght.ttf'),
+    'PublicSans-Italic': require('./assets/fonts/PublicSans-Italic-VariableFont_wght.ttf')
   });
 
   if (!fontsLoaded) {
@@ -15,12 +25,14 @@ export default function App() {
   }
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Platform Default</Text>
-      <Text style={{ fontFamily: "Inter-Black" }}>Inter Black</Text>
-      <Text style={{ fontFamily: "Inter-SemiBoldItalic" }}>
-        Inter SemiBoldItalic
-      </Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="SetupWelcome" component={SetupWelcome} />
+        <Stack.Screen name="SetupPin" component={SetupPin} />
+        <Stack.Screen name="SetupEmergency" component={SetupEmergency} />
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

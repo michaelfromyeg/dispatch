@@ -16,35 +16,42 @@ Figma [TBD](https://michaeldemar.co).
 ### Figma TODOs (user FE only)
 
 Onboarding
-* First time, set your pin
-* Set settings
-* Then main screen
+
+- [x] First time, set your pin
+- [x] Set settings
+- [x] Then main screen
 
 Main screen
-* Logo
-* Button
-* Navigation bar (to settings)
+
+- [x] Logo
+- [x] Button
+- [x] Navigation bar (to settings)
 
 Main screen (button pressed)
-* As above, but button is a different color
+
+- [x] As above, but button is a different color
 
 Main screen (button released after pressed)
-* Pin page is on the screen (pop-up)
-* Timer
+
+- [x] Pin page is on the screen (pop-up)
+- [x] Timer
 
 Main screen (post button released, call made)
-* Notification that help is on the way
+
+- [x] Notification that help is on the way
 
 Main screen (post button released, call cancelled)
-* Notification that call has been cancelled
-* Back to main screen defaults
+
+- [x] Notification that call has been cancelled
+- [x] Back to main screen defaults
 
 Settings
-* Two-tiers, one is "locked" as emergency services; other is family and friends (this is customizable)
-* Choose a message to send to family and friends
-* Toggle location for family and friends
-* Customize length of time
-* Set your pin
+
+- [x] Two-tiers, one is "locked" as emergency services; other is family and friends (this is customizable)
+- [x] Choose a message to send to family and friends
+- [x] Toggle location for family and friends
+- [x] Customize length of time
+- [x] Set your pin
 
 ### API TODOs
 
@@ -64,17 +71,16 @@ GET user
 
 ### Dashboard TODOs
 
-* Fetch all logs
-* Render in table
-* Filter, paginate, sort
-* Map with pinned locations (longitude and latitude)
-
+- Fetch all logs
+- Render in table
+- Filter, paginate, sort
+- Map with pinned locations (longitude and latitude)
 
 ### "Above and Beyond" TODOs
 
-* Other way of creating a dispatch without the button, while phone is locked
-* Voice assistants, some other smart technology
-* Activate video and voice on dispatch
+- Other way of creating a dispatch without the button, while phone is locked
+- Voice assistants, some other smart technology
+- Activate video and voice on dispatch
 
 ### Background
 
